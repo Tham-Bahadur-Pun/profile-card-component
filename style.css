@@ -52,6 +52,22 @@ main {
   align-items: center;
   flex-direction: column;
 }
+.name {
+  margin-top: 50px;
+}
+
+.followers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
 .avatar {
   position: absolute;
   border-radius: 50%;
@@ -60,4 +76,5 @@ main {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   top: -50%;
+  border: 5px solid white;
 }
