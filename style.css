@@ -7,7 +7,7 @@
 :root {
   --Darkcyan: hsl(185, 75%, 39%);
   --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
-  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_grayish_blue: hsla(227, 10%, 46%, 0.2);
   --Dark_gray: hsl(0, 0%, 59%);
 }
 /* img {
@@ -20,7 +20,7 @@ body {
   background-color: var(--Darkcyan);
   background-image: url("./images/bg-pattern-top.svg"),
     url("./images/bg-pattern-bottom.svg");
-  background-position: 124% 50%, -20% -39%;
+  background-position: 124% 250%, -22% -150%;
   background-repeat: no-repeat, no-repeat;
   min-height: 100vh;
   display: flex;
@@ -29,7 +29,7 @@ body {
 }
 main {
   background-color: #fff;
-  max-width: 700px;
+  max-width: 400px;
   width: 90%;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -51,9 +51,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 1px solid var(--Dark_grayish_blue);
 }
 .name {
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .followers {
@@ -77,4 +78,17 @@ main {
   -o-border-radius: 50%;
   top: -50%;
   border: 5px solid white;
+}
+p {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--Very_dark_desaturated_blue);
+}
+span,
+.address {
+  font-weight: 100;
+  color: var(--Dark_gray);
+}
+.address {
+  margin-top: -10px;
 }
